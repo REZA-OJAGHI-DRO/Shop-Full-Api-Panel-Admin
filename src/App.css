@@ -1,0 +1,41 @@
+.color-1{
+color:rgb(38,159,183)
+}
+.bg-1{
+background-color:rgb(38,159,183)
+}
+.border-1{
+  border: 2px solid rgb(38,159,183);
+}
+.gridArea{
+  grid-area: 1/1/2/2;
+}
+
+.footer-img{
+  background-image: url('./assets/img/6.png');
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+}
+.col{
+  flex-direction: column-revers
+}
+.myElement {
+  overflow: auto;
+}
+
+.myElement::-webkit-scrollbar {
+  width: 8px;
+}
+
+.myElement::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+.myElement::-webkit-scrollbar-thumb {
+  background: #888;
+  border-radius: 10px;
+}
+
+.myElement::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
