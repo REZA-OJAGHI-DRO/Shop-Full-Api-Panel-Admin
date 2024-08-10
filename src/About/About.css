@@ -1,0 +1,7 @@
+.section1-about-bg{
+    background-image: url('../assets/img/9.png');
+    background-size: 100% 60%;
+    background-repeat: no-repeat;
+    background-position: 0 40%;
+    background-attachment: fixed;
+}

@@ -4,7 +4,6 @@ import React from 'react';
 import { useQuery } from "react-query";
 import { fetchShopData } from '../../function'
 import TitleSection from "../../componentGeneral/titleSection";
-import Button from '../../componentGeneral/button'
 import Product from '../../componentGeneral/product'
 function Section1() {
 

@@ -1,5 +1,5 @@
 .color-1{
-color:rgb(38,159,183)
+color:rgb(38,159,183);
 }
 .bg-1{
 background-color:rgb(38,159,183)
@@ -11,6 +11,9 @@ background-color:rgb(38,159,183)
   grid-area: 1/1/2/2;
 }
 
+.bg-2{
+  background-image: linear-gradient(to top,rgba(38, 159, 183, 0.876),rgba(0, 0, 0, 0.796));
+}
 .footer-img{
   background-image: url('./assets/img/6.png');
   background-size: 100% 100%;
@@ -32,10 +35,31 @@ background-color:rgb(38,159,183)
 }
 
 .myElement::-webkit-scrollbar-thumb {
-  background: #888;
+  background: rgb(38,159,183);
   border-radius: 10px;
 }
 
 .myElement::-webkit-scrollbar-thumb:hover {
   background: #555;
 }
+.myElement2 {
+  overflow: auto;
+}
+
+.myElement2::-webkit-scrollbar {
+  width: 10px;
+}
+
+.myElement2::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+.myElement2::-webkit-scrollbar-thumb {
+  background: rgb(38,159,183);
+  border-radius: 5px;
+}
+
+.myElement2::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+

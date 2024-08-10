@@ -1,11 +1,21 @@
-import React, { useEffect, useState } from "react";
+import React from "react";
+import { useEffect, useState } from "react";
 import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
 import Home from "./Home/Home.jsx";
+import Shop from "./Shop/shop.jsx";
 import About from "./About/About.jsx";
+import Testimonials from "./testimonials/testimonials.jsx";
+import Contact from "./Contact/contact.jsx";
+import AddCart from "./AddCart/addCart.jsx";
 import img1 from "./assets/img/2.png";
 import "./App.css";
+import { useSelector } from "react-redux";
+
 
 function App() {
+  const data = useSelector((state) => state.product.ShopProduct);
+
+
   const [scrollY, setScrollY] = useState(0);
   useEffect(() => {
     const handleScroll = () => {
@@ -22,10 +32,11 @@ function App() {
 
   return (
     <Router>
+   
       <div className="w-full bg-[#F7F7F7]">
         <nav
           className={`w-full h-[130px] ${
-            scrollY > 200 ? "hidden" : "hidden lg:flex"
+            scrollY > 100 ? "hidden" : "hidden lg:flex"
           }  flex-wrap justify-center  items-center fixed`}
         >
           <div className="w-full flex justify-center items-center">
@@ -48,15 +59,18 @@ function App() {
               <Link to="/contact">contact</Link>
             </li>
             <li>
-              <Link to="/addCart">
+              <Link to="/addCart" className="relative">
                 <i className="bi bi-basket3-fill text-[1.5rem]"></i>
+               {
+                data.length > 0 && <span className="absolute top-0 right-0 w-4 h-4 bg-red-500 rounded-full text-white flex justify-center items-center text-xs">{data.length}</span>
+               }
               </Link>
             </li>
           </ul>
         </nav>
         <nav
           className={`w-full h-[130px] ${
-            scrollY > 200 ? "hidden" : "lg:hidden flex"
+            scrollY > 100 ? "hidden" : "lg:hidden flex"
           }  justify-center items-center fixed`}
         >
           <ul className="flex w-full justify-between px-10">
@@ -69,8 +83,11 @@ function App() {
               ></i>
             </li>
             <li>
-              <Link to="/addCart">
+            <Link to="/addCart" className="relative">
                 <i className="bi bi-basket3-fill text-[1.5rem] text-white"></i>
+               {
+                data.length > 0 && <span className="absolute top-0 right-0 w-4 h-4 bg-red-500 rounded-full text-white flex justify-center items-center text-xs">{data.length}</span>
+               }
               </Link>
             </li>
           </ul>
@@ -107,9 +124,14 @@ function App() {
         </div>
         <Routes>
           <Route path="/" element={<Home />} />
+          <Route path="/shop" element={<Shop />} />
+          <Route path="/testimonials" element={<Testimonials />} />
           <Route path="/about" element={<About />} />
+          <Route path="/contact" element={<Contact />} />
+          <Route path="/addCart" element={<AddCart />} />
         </Routes>
       </div>
+  
     </Router>
   );
 }
