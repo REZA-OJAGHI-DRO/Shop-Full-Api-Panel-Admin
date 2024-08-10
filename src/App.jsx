@@ -125,6 +125,9 @@ function App() {
             <li>
               <Link to="/contact">contact</Link>
             </li>
+            <li>
+              <Link to="/login">sign up / login</Link>
+            </li>
           </ul>
         </div>
         <Routes>
