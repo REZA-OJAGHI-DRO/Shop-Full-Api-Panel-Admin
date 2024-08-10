@@ -153,7 +153,7 @@ function Section1() {
 
   <div
     style={{ display: modal ? 'block' : 'none' }}
-    className="w-[100%] h-[100vh] fixed top-0 justify-center overflow-y-scroll bg-[rgb(229,229,229)] z-40">
+    className="w-[100%] h-[100vh] fixed top-0 justify-center overflow-y-scroll myElement bg-[rgb(229,229,229)] z-40">
     <div className="2xl:container w-[100%] flex flex-wrap justify-center py-5">
       <section className="w-[90%] pb-10">
         <div className="w-[100%] py-5">
@@ -164,7 +164,7 @@ function Section1() {
         </div>
         <hr className="w-[100%] h-[5px] bg-1" />
         <div className="w-[100%] flex flex-wrap">
-          <div className="w-[100%] md:w-[60%] flex flex-wrap justify-center gap-1">
+          <div className="w-[100%] xl:w-[60%] flex flex-wrap justify-center gap-1">
             <div className="w-[90%] p-5">
               <h4 className="w-[100%] flex items-center text-[1.5rem]">
                 Billing details
@@ -172,41 +172,42 @@ function Section1() {
             </div>
             <hr className="w-[90%] h-[3px] bg-zinc-500" />
             <label htmlFor="i1" className="w-[90%] flex flex-wrap justify-between items-center px-2 pt-2">
-              <p className="w-[45%] text-[1.5rem] md:text-[1rem]">First name <span className="text-[red]">*</span></p>
-              <p className="w-[45%] text-[1.5rem] md:text-[1rem]">Last name <span className="text-[red]">*</span></p>
-              <input type="text" className="inpCheckout w-[45%] text-[2rem] md:text-[1.5rem] border border-zinc-400" required />
-              <input type="text" className="inpCheckout w-[45%] text-[2rem] md:text-[1.5rem] border border-zinc-400" required />
+              <p className="w-[100%] lg:w-[45%] text-[1rem]">First name <span className="text-[red]">*</span></p>
+              <p className="w-[100%] lg:w-[45%] text-[1rem] hidden lg:flex">Last name <span className="text-[red]">*</span></p>
+              <input type="text" className="inpCheckout w-[100%] lg:w-[45%] text-[1.5rem] border border-zinc-400" required />
+              <p className="w-[100%] lg:w-[45%] text-[1rem] flex lg:hidden">Last name <span className="text-[red]">*</span></p>
+              <input type="text" className="inpCheckout w-[100%] lg:w-[45%] text-[1.5rem] border border-zinc-400" required />
             </label>
             <label htmlFor="i1" className="w-[90%] flex flex-wrap justify-between items-center px-2">
-              <p className="w-[100%] text-[1.5rem] md:text-[1rem]">Company name (optional)</p>
-              <input type="text" className="inpCheckout w-[100%] text-[2rem] md:text-[1.5rem] border border-zinc-400" />
+              <p className="w-[100%] text-[1rem]">Company name (optional)</p>
+              <input type="text" className="inpCheckout w-[100%] text-[1.5rem] border border-zinc-400" />
             </label>
             <label htmlFor="i1" className="w-[90%] flex flex-wrap justify-between items-center px-2">
-              <p className="w-[100%] text-[1.5rem] md:text-[1rem]">Street address <span className="text-[red]">*</span></p>
-              <input type="text" className="inpCheckout w-[100%] text-[2rem] md:text-[1.5rem] border border-zinc-400 mb-2"
+              <p className="w-[100%] text-[1rem]">Street address <span className="text-[red]">*</span></p>
+              <input type="text" className="inpCheckout w-[100%] text-[1.5rem] border border-zinc-400 mb-2"
                 placeholder="House number and street name" required />
-              <input type="text" className="inpCheckout w-[100%] text-[2rem] md:text-[1.5rem] border border-zinc-400"
+              <input type="text" className="inpCheckout w-[100%] text-[1.5rem] border border-zinc-400"
                 placeholder="Apartment,suite,unit,etc.(optional)" />
             </label>
             <label htmlFor="i1" className="w-[90%] flex flex-wrap justify-between items-center px-2">
-              <p className="w-[100%] text-[1.5rem] md:text-[1rem]">Town / City <span className="text-[red]">*</span></p>
-              <input type="text" className="inpCheckout w-[100%] text-[2rem] md:text-[1.5rem] border border-zinc-400" required />
+              <p className="w-[100%] text-[1rem]">Town / City <span className="text-[red]">*</span></p>
+              <input type="text" className="inpCheckout w-[100%] text-[1.5rem] border border-zinc-400" required />
             </label>
             <label htmlFor="i1" className="w-[90%] flex flex-wrap justify-between items-center px-2">
-              <p className="w-[100%] text-[1.5rem] md:text-[1rem]">County (optional)</p>
-              <input type="text" className="inpCheckout w-[100%] text-[2rem] md:text-[1.5rem] border border-zinc-400" />
+              <p className="w-[100%] text-[1rem]">County (optional)</p>
+              <input type="text" className="inpCheckout w-[100%] text-[1.5rem] border border-zinc-400" />
             </label>
             <label htmlFor="i1" className="w-[90%] flex flex-wrap justify-between items-center px-2">
-              <p className="w-[100%] text-[1.5rem] md:text-[1rem]">Postcode <span className="text-[red]">*</span></p>
-              <input type="text" className="inpCheckout w-[100%] text-[2rem] md:text-[1.5rem] border border-zinc-400" required />
+              <p className="w-[100%] text-[1rem]">Postcode <span className="text-[red]">*</span></p>
+              <input type="text" className="inpCheckout w-[100%] text-[1.5rem] border border-zinc-400" required />
             </label>
             <label htmlFor="i1" className="w-[90%] flex flex-wrap justify-between items-center px-2">
-              <p className="w-[100%] text-[1.5rem] md:text-[1rem]">Phone <span className="text-[red]">*</span></p>
-              <input type="text" className="inpCheckout w-[100%] text-[2rem] md:text-[1.5rem] border border-zinc-400" required />
+              <p className="w-[100%] text-[1rem]">Phone <span className="text-[red]">*</span></p>
+              <input type="text" className="inpCheckout w-[100%] text-[1.5rem] border border-zinc-400" required />
             </label>
             <label htmlFor="i1" className="w-[90%] flex flex-wrap justify-between items-center px-2">
-              <p className="w-[100%] text-[1.5rem] md:text-[1rem]">Email address <span className="text-[red]">*</span></p>
-              <input type="email" className="inpCheckout w-[100%] text-[2rem] md:text-[1.5rem] border border-zinc-400" required />
+              <p className="w-[100%] text-[1rem]">Email address <span className="text-[red]">*</span></p>
+              <input type="email" className="inpCheckout w-[100%] text-[1.5rem] border border-zinc-400" required />
             </label>
             <div className="w-[90%] p-5">
               <h4 className="w-[100%] flex items-center text-[1.5rem]">
@@ -215,13 +216,13 @@ function Section1() {
             </div>
             <hr className="w-[90%] h-[3px] bg-zinc-500" />
             <label htmlFor="i1" className="w-[90%] flex flex-wrap justify-between items-center px-2">
-              <p className="w-[100%] text-[1.5rem] md:text-[1rem]">Order notes (optional)</p>
+              <p className="w-[100%] text-[1rem]">Order notes (optional)</p>
               <textarea name="" id="" cols="30" rows="3"
-                className="inpCheckout w-[100%] text-[2rem] md:text-[1.5rem] border border-zinc-400"
+                className="inpCheckout w-[100%] text-[1rem] border border-zinc-400"
                 placeholder="Notes about your order,e.g.special notes for delivery."></textarea>
             </label>
           </div>
-          <div className="w-[100%] md:w-[40%] flex flex-wrap justify-center content-start">
+          <div className="w-[100%] xl:w-[40%] flex flex-wrap justify-center content-start py-10">
             <ul className="w-[100%] md:w-[80%] flex flex-wrap justify-center gap-2">
               <li className="w-[90%] text-[2rem] font-bold">Your order</li>
               <li className="w-[90%] flex justify-between border-b-2 border-zinc-400">
@@ -241,8 +242,6 @@ function Section1() {
                 </li>
               ))}
             </ul>
-            {/* <ul id="div10" className="w-[30%] flex flex-wrap justify-center gap-2">
-            </ul> */}
             <ul id="div11" className="w-[50%] md:w-[40%] flex flex-wrap justify-center gap-2">
             </ul>
             <ul className="w-[100%] md:w-[80%] flex flex-wrap justify-center gap-2">

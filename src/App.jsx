@@ -6,6 +6,7 @@ import Shop from "./Shop/shop.jsx";
 import About from "./About/About.jsx";
 import Testimonials from "./testimonials/testimonials.jsx";
 import Contact from "./Contact/contact.jsx";
+import Login from "./login/login.jsx";
 import AddCart from "./AddCart/addCart.jsx";
 import img1 from "./assets/img/2.png";
 import "./App.css";
@@ -14,6 +15,7 @@ import { useSelector } from "react-redux";
 
 function App() {
   const data = useSelector((state) => state.product.ShopProduct);
+  
 
 
   const [scrollY, setScrollY] = useState(0);
@@ -33,7 +35,7 @@ function App() {
   return (
     <Router>
    
-      <div className="w-full bg-[#F7F7F7]">
+      <div className="w-full bg-[#F7F7F7] ">
         <nav
           className={`w-full h-[130px] ${
             scrollY > 100 ? "hidden" : "hidden lg:flex"
@@ -57,6 +59,9 @@ function App() {
             </li>
             <li>
               <Link to="/contact">contact</Link>
+            </li>
+            <li>
+              <Link to="/login">sign up / login</Link>
             </li>
             <li>
               <Link to="/addCart" className="relative">
@@ -128,6 +133,7 @@ function App() {
           <Route path="/testimonials" element={<Testimonials />} />
           <Route path="/about" element={<About />} />
           <Route path="/contact" element={<Contact />} />
+          <Route path="/login" element={<Login />} />
           <Route path="/addCart" element={<AddCart />} />
         </Routes>
       </div>

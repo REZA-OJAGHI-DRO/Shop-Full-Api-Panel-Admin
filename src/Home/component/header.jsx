@@ -33,7 +33,7 @@ function header() {
                     value={"VIVE MORE"}
                     href={"#top"}
                     styleButton={
-                      "text-white text-[1rem] lg:text-[1.5rem] px-4 rounded-xl py-1 border-2 border-white  transition-all duration-300 hover:bg-white hover:text-[rgb(38,159,183)]"
+                      "text-white text-[1rem] lg:text-[1.5rem] px-4 rounded-xl py-1 border-2 border-white  transition-all duration-300 hover:bg-black hover:text-white hover:border-black"
                     }
                   />
                 </div>

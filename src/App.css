@@ -42,6 +42,26 @@ background-color:rgb(38,159,183)
 .myElement::-webkit-scrollbar-thumb:hover {
   background: #555;
 }
+.myElement3 {
+  overflow: auto;
+}
+
+.myElement3::-webkit-scrollbar {
+  width: 8px;
+}
+
+.myElement3::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.myElement3::-webkit-scrollbar-thumb {
+  background: rgb(38,159,183);
+  border-radius: 10px;
+}
+
+.myElement3::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
 .myElement2 {
   overflow: auto;
 }
@@ -63,3 +83,8 @@ background-color:rgb(38,159,183)
   background: #555;
 }
 
+.login-img{
+  background-image: url('./assets/img/1.jpg');
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+}
