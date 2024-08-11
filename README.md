@@ -1,8 +1,17 @@
-# React + Vite
+# Shop-api-full
+**If you have a lot of information to display on your site, why don't you use my accordion menu**
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+![Screenshot (45)](https://github.com/REZA-OJAGHI-DRO/Shop-api-full/assets/145910720/78f2e547-2043-413b-8679-18a0ba4ffe47)
 
-Currently, two official plugins are available:
+- [Demo Project](https://shop-full-api-panel-admin.vercel.app/)
+- Developed by reza ojaghi
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- Created - 2024-08-10
+
+- Technologies Used - Html , tailwind , js  ,Api ,React,  Redux ,  React Query 
+
+- Hooks Used : useState 
+
+- Role - Frontend
+
+- How to reach me : with my [instagram](https://www.instagram.com/reza-ojaghi-dro) and [linkedin](https://www.linkedin.com/in/reza-ojaghi-428748280/)# Shop-api-full
