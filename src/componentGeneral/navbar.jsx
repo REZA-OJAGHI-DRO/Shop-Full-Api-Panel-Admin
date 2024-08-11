@@ -116,6 +116,9 @@ function Navbar() {
          <li>
            <Link to="/login">sign up / login</Link>
          </li>
+         <li>
+           <Link to="/dashboard">dashboard</Link>
+         </li>
        </ul>
      </div>
    </div> 
