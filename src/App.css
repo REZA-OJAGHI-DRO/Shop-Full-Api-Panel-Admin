@@ -37,6 +37,7 @@ background-color:rgb(38,159,183)
 .myElement::-webkit-scrollbar-thumb {
   background: rgb(38,159,183);
   border-radius: 10px;
+  
 }
 
 .myElement::-webkit-scrollbar-thumb:hover {
